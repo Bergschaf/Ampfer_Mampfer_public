@@ -12,9 +12,10 @@ import haversine
 from haversine import inverse_haversine
 from exif import Image as EImage
 import json
+import simplekml
 
 
-bilderp = "drive/MyDrive/Bilder/"  # Ordner, in den die Bilder hochgeladen werden
+bilderp = "drive/MyDrive/Bilder/"  # Ordner, in den die Bilder hochgeladen wurden
 targetp = "drive/MyDrive/Koordinaten/"  # Ordner, in den die ermittelten Koordinaten gespeichert werden
 
 
@@ -193,7 +194,7 @@ def get_Ampfer_Cords(filename, boxes, Img_dir):
 
 
 if __name__ == "__main__":
-    dataset = Dataloader(transforms=T.Compose(T.ToTensor()))
+    dataset = Dataloader(transforms=T.Compose([T.ToTensor()]))
     torch.manual_seed(1)
     indices = torch.randperm(len(dataset)).tolist()
     dataset = torch.utils.data.Subset(dataset, indices)
@@ -232,5 +233,3 @@ if __name__ == "__main__":
         kml.save(f"drive/MyDrive/Koordinaten/{pic_name[:-4]}.kml")
         # Diese Koordinaten werden dann in einer .json und in einer .kml Datei gespeichert.
         print(pic_name + " done!")
-
-
