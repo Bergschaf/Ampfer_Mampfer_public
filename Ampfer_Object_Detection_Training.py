@@ -14,7 +14,6 @@ from PIL import ImageDraw, Image
 
 train = True  # Wenn diese Variable auf True gesetzt ist, dann wird das Netz Trainiert, sonst wird nur getestet.
 
-
 # --------------------------------------------------------------------------------------------------------------------------------------------------
 
 
