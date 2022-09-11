@@ -7,7 +7,7 @@ Programme des Ampfer Mampfer Jugend Forscht Projekts
  2. Setup ausführen  
    Die ersten drei Codeblöcke sind dazu da die nötigen bibiotheken zu installieren und die Dateien herunterzuladen  
  3. Die Ampfererkennungssysteme ausprobieren  
-   Das erste Skript gibt die Koordinaten der Ampferpflanzen auf den Drohenenbildern in einer KML Datei in dem Ordner "Koordinaten" aus  
+   Das erste Skript gibt die Koordinaten der Ampferpflanzen auf den Drohenenbildern in einer KML Datei, die in Google Maps geöffnet werden kann, in dem Ordner "Koordinaten" aus  
    Das zweite Skript zeigt die Ampferpositionen auf den Drohenenbildern an  
    Das dritte Skript zeigt die Ampferpositionen auf den Ampferbildern aus 1m Höhe an  
    
